@@ -26,11 +26,13 @@ const categoriesRoutes = require('./routers/categories');
 const productsRoutes = require('./routers/products');
 const usersRoutes = require('./routers/users');
 const ordersRoutes = require('./routers/orders');
+const healthRoutes = require('./routers/health');
 
 app.use(`${api}/categories`, categoriesRoutes);
 app.use(`${api}/products`, productsRoutes);
 app.use(`${api}/users`, usersRoutes);
 app.use(`${api}/orders`, ordersRoutes);
+app.use(`${api}/health`, healthRoutes);
 
 //http://localhost:3000/api/v1/products
 
